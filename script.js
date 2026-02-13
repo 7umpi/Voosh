@@ -22,7 +22,7 @@ function finalYes() {
   `;
 
   // Start popping wolf GIFs after confirmation
-  setInterval(popImage, 400);
+  setInterval(popImage, 500);
 
 
 }
@@ -85,6 +85,7 @@ function popImage() {
   document.body.appendChild(img);
   setTimeout(() => img.remove(), 3000);
 }
+
 
 
 
