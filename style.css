@@ -1,0 +1,89 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: #ffe6f0;
+  margin-top: 100px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* falling hearts */
+.heart {
+  position: fixed;
+  top: -20px;
+  font-size: 20px;
+  animation: fall linear forwards;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+/* trail dots */
+.trail {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: pink;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  animation: fade 0.5s linear forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.popup {
+  position: fixed;
+  width: 120px;      /* size of popping pictures */
+  height: auto;
+  pointer-events: none;
+  animation: popFade 2s ease forwards;
+}
+
+.popup {
+  position: fixed;
+  width: 120px;
+  height: auto;
+  pointer-events: none;
+  animation: popFade 3s ease forwards;
+}
+
+@keyframes popFade {
+  0% { transform: scale(0.3); opacity: 0; }
+  30% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+.confirmGif {
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.finalGif {
+  width: 250px;
+  margin-top: 20px;
+  border-radius: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
