@@ -76,7 +76,7 @@ function createHeart() {
 // ---------- POPPING GIFS ----------
 function popImage() {
   const img = document.createElement("img");
-  img.src = "dance.gif";
+  img.src = "https://i.pinimg.com/originals/e1/c6/82/e1c6829221cf788ca7384af54b9b94ee.gif";
   img.className = "popup";
 
   img.style.left = Math.random() * (window.innerWidth - 120) + "px";
@@ -85,5 +85,6 @@ function popImage() {
   document.body.appendChild(img);
   setTimeout(() => img.remove(), 3000);
 }
+
 
 
