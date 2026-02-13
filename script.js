@@ -76,7 +76,7 @@ function createHeart() {
 // ---------- POPPING GIFS ----------
 function popImage() {
   const img = document.createElement("img");
-  img.src = "wolf.GIF";
+  img.src = "dance.gif";
   img.className = "popup";
 
   img.style.left = Math.random() * (window.innerWidth - 120) + "px";
@@ -85,4 +85,5 @@ function popImage() {
   document.body.appendChild(img);
   setTimeout(() => img.remove(), 3000);
 }
+
 
